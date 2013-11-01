@@ -66,31 +66,68 @@
  * @see template_process()
  */
 ?>
+<div class="page">
+  <?php if ($page['header']): ?>
+    <header id="header" role="banner">
+      <?php print render($page['header']); ?>
+    </header>
+  <?php endif; ?>
 
-<?php if ($page['header']): ?>
-  <header id="header" role="banner">
-    <?php print render($page['header']); ?>
-  </header>
-<?php endif; ?>
+  <div class="clearfix"></div>
 
-<?php if ($page['main_prefix']): ?>
-  <?php print render($page['main_prefix']); ?>
-<?php endif; ?>
+  <div class="main-wrapper">
+    <?php if ($page['main_prefix']): ?>
+      <?php print render($page['main_prefix']); ?>
+    <?php endif; ?>
 
-<?php if ($page['content']): ?>
-  <main id="main" role="main">
-    <?php print render($page['content']); ?>
-  </main>
-<?php endif; ?>
+    <div class="clearfix"></div>
 
+    <?php if ($page['main_prefix_first']): ?>
+       <?php print render($page['main_prefix_first']); ?>
+    <?php endif; ?>
 
-<?php if ($page['main_suffix']): ?>
-  <?php print render($page['main_suffix']); ?>
-<?php endif; ?>
+    <?php if ($page['main_prefix_second']): ?>
+       <?php print render($page['main_prefix_second']); ?>
+    <?php endif; ?>
 
+    <?php if ($page['main_prefix_third']): ?>
+       <?php print render($page['main_prefix_third']); ?>
+    <?php endif; ?>
 
-<?php if ($page['footer']): ?>
-  <footer id="footer" role="contentinfo">
-    <?php print render($page['footer']); ?>
-  </footer>
-<?php endif; ?>
+    <div class="clearfix"></div>
+
+    <?php if ($page['content']): ?>
+      <main id="main" role="main">
+        <?php print render($page['content']); ?>
+      </main>
+    <?php endif; ?>
+
+    <div class="clearfix"></div>
+
+    <?php if ($page['main_suffix']): ?>
+      <?php print render($page['main_suffix']); ?>
+    <?php endif; ?>
+
+    <?php if ($page['main_suffix_first']): ?>
+      <?php print render($page['main_suffix_first']); ?>
+    <?php endif; ?>
+
+     <?php if ($page['main_suffix_second']): ?>
+      <?php print render($page['main_suffix_second']); ?>
+     <?php endif; ?>
+
+    <div class="clearfix"></div>
+  </div>
+
+  <?php if ($page['sidebar_second']): ?>
+    <?php print render($page['sidebar_second']); ?>
+  <?php endif; ?>
+
+  <div class="clearfix"></div>
+
+  <?php if ($page['footer']): ?>
+    <footer id="footer" role="contentinfo">
+      <?php print render($page['footer']); ?>
+    </footer>
+  <?php endif; ?>
+</div>
