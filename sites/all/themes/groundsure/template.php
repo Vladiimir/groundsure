@@ -53,9 +53,9 @@ function groundsure_preprocess_html(&$vars) {
  * @param $hook
  *   The name of the template being rendered ("page" in this case.)
  */
-/* -- Delete this line if you want to use this function
-function groundsure_preprocess_page(&$vars) {
 
+function groundsure_preprocess_page(&$vars) {
+  unset($vars['page']['content']['system_main']['default_message']);
 }
 
 /**
@@ -178,3 +178,14 @@ function groundsure_js_alter(&$js) {
 
 }
 // */
+
+function groundsure_form_user_login_block_alter(&$form, &$form_state, $form_id) {
+  // Modification for the form with the given form ID goes here. For example, if
+  // FORM_ID is "user_register_form" this code would run only on the user
+  // registration form.
+  $form['name']['#title'] = '';
+  $form['name']['#placeholder'] = 'Username';
+  $form['pass']['#title'] = '';
+  $form['pass']['#placeholder'] = 'Password';
+  $form['links']['#markup'] = '<ul><li class="first">' . l(t('forgot password?'), 'user/password', array('attributes' => array('title' => 'Request new password via e-mail.'))) . '</li></ul>';
+}

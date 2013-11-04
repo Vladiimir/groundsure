@@ -12,7 +12,6 @@ $grids: 1;
 $grids: add-grid(259px 125px 125px 249px at 768px);
 $grids: add-grid(259px 125px 125px 249px 232px at 990px);
 $gutters: 0;
-
 .page{
   @include background-grid;
   margin: 0 auto;
@@ -57,13 +56,13 @@ $gutters: 0;
     @include grid-span(5, 1);
   }
   clear: both;
-  overflow: hidden;
+  //overflow: hidden;
   border: 1px solid red;
 }
 .region-main-prefix-first{
   @include grid-span(1, 1, 259px 250px 249px);
   border: 1px solid green;
-  overflow: hidden;
+  //overflow: hidden;
   @include breakpoint(max-width 767px){
     @include grid-span(1, 1);
   }
@@ -71,7 +70,7 @@ $gutters: 0;
 .region-main-prefix-second{
   @include grid-span(1, 2, 259px 250px 249px);
   border: 1px solid green;
-  overflow: hidden;
+  //overflow: hidden;
   @include breakpoint(max-width 767px){
     @include grid-span(1, 1);
   }
@@ -79,7 +78,7 @@ $gutters: 0;
 .region-main-prefix-third{
   @include grid-span(1, 3, 259px 250px 249px);
   border: 1px solid green;
-  overflow: hidden;
+  //overflow: hidden;
   @include breakpoint(max-width 767px){
     @include grid-span(1, 1);
   }
@@ -87,7 +86,7 @@ $gutters: 0;
 #block-system-main{
   @include grid-span(3, 1, 259px 250px 249px);
   border: 1px solid green;
-  overflow: hidden;
+  //overflow: hidden;
   clear: both;
 }
 .region-main-suffix-first{
@@ -101,7 +100,7 @@ $gutters: 0;
 .region-main-suffix-second{
   @include grid-span(2, 3, 259px 125px 125px 249px);
   border: 1px solid green;
-  overflow: hidden;
+  //overflow: hidden;
   @include breakpoint(max-width 767px){
     @include grid-span(1, 1);
   }
