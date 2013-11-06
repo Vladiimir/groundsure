@@ -1,0 +1,17 @@
+////////////////////////
+// Layouts Partials
+//
+// Separate your Layout from Design
+// Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
+//
+// All box model properties go here
+////////////////////////
+
+body{
+  background: url("../images/bg_common.png") left top;
+  font-family: $font-normal-common;
+}
+.page{
+  box-shadow: 0px 11px 50px 2px #4e4e4e;
+  background: $page-background;
+}

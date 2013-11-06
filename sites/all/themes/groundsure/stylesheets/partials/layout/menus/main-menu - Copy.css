@@ -1,0 +1,17 @@
+.menu-name-main-menu ul {
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+.menu-name-main-menu ul li {
+  display: inline-block;
+  padding: 5px 25px;
+}
+.menu-name-main-menu.menu-level-2 ul {
+  padding: 0 0 0 10px;
+}
+.menu-name-main-menu.menu-level-2 ul li a {
+  font-size: 14px;
+}
+.menu-name-main-menu.menu-level-2 ul li.active-trail {
+  background: #3f719f;
+}

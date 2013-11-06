@@ -15,8 +15,12 @@ img, video {
   height: auto;
 }
 
+/*--------------common variables------------------------*/
+/*--------------common variables------------------------*/
 /*--------------font variables------------------------*/
 /*--------------end font variables--------------------*/
+/*--------------form variables------------------------*/
+/*--------------end form variables--------------------*/
 .clearfix:before, .clearfix:after {
   display: table;
   content: "";
@@ -240,34 +244,77 @@ table {
   border-spacing: 0;
 }
 
+.region-header #logo {
+  display: inline-block;
+  padding: 20px 20px 13px 20px;
+}
+.region-header #block-user-login {
+  float: right;
+}
+
+.region-footer {
+  padding: 15px 0 10px;
+}
+
+#block-user-login {
+  width: 340px;
+  padding: 15px 20px 8px 20px;
+}
+#block-user-login ul {
+  margin: 0;
+  padding: 3px 0 9px;
+}
+#block-user-login .form-item {
+  margin: 0 18px 6px 0;
+  float: left;
+  clear: left;
+}
+#block-user-login .form-item input {
+  width: 173px;
+  height: 25px;
+  padding-left: 6px;
+}
+#block-user-login .form-actions {
+  margin: 0;
+}
+#block-user-login .form-actions .form-submit {
+  width: 108px;
+  height: 25px;
+}
+
+.menu-name-main-menu ul {
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+.menu-name-main-menu ul li {
+  margin: 0;
+  display: inline-block;
+  padding: 5px 25px;
+}
+.menu-name-main-menu.menu-level-2 ul {
+  padding: 0 0 0 10px;
+}
+
+#block-menu-menu-footer-menu ul {
+  margin: 0;
+  padding: 0 0 0 0px;
+  text-align: center;
+}
+#block-menu-menu-footer-menu ul li {
+  display: inline;
+  padding: 0px 4px 0px 0px;
+  margin: 0;
+  border-right: 1px solid #ffffff;
+}
+#block-menu-menu-footer-menu ul li.last {
+  border: none;
+}
+
 .page {
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(231, 146, 86, 0.5)), color-stop(100%, rgba(231, 146, 86, 0.5)));
-  background-image: -webkit-linear-gradient(left, rgba(231, 146, 86, 0.5), rgba(231, 146, 86, 0.5) 100%);
-  background-image: -moz-linear-gradient(left, rgba(231, 146, 86, 0.5), rgba(231, 146, 86, 0.5) 100%);
-  background-image: -o-linear-gradient(left, rgba(231, 146, 86, 0.5), rgba(231, 146, 86, 0.5) 100%);
-  background-image: linear-gradient(left, rgba(231, 146, 86, 0.5), rgba(231, 146, 86, 0.5) 100%);
   margin: 0 auto;
   min-height: 100%;
   max-width: 990px;
   overflow: hidden;
-}
-@media (min-width: 768px) {
-  .page {
-    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(231, 146, 86, 0.5)), color-stop(34.16887%, rgba(231, 146, 86, 0.5)), color-stop(34.16887%, rgba(231, 146, 86, 0.25)), color-stop(34.16887%, rgba(231, 146, 86, 0.25)), color-stop(34.16887%, rgba(210, 105, 30, 0.5)), color-stop(50.65963%, rgba(210, 105, 30, 0.5)), color-stop(50.65963%, rgba(210, 105, 30, 0.25)), color-stop(50.65963%, rgba(210, 105, 30, 0.25)), color-stop(50.65963%, rgba(231, 146, 86, 0.5)), color-stop(67.1504%, rgba(231, 146, 86, 0.5)), color-stop(67.1504%, rgba(231, 146, 86, 0.25)), color-stop(67.1504%, rgba(231, 146, 86, 0.25)), color-stop(67.1504%, rgba(210, 105, 30, 0.5)), color-stop(100%, rgba(210, 105, 30, 0.5)), color-stop(100%, rgba(210, 105, 30, 0.25)), color-stop(100%, rgba(210, 105, 30, 0.25)));
-    background-image: -webkit-linear-gradient(left, rgba(231, 146, 86, 0.5), rgba(231, 146, 86, 0.5) 34.16887%, rgba(231, 146, 86, 0.25) 34.16887%, rgba(231, 146, 86, 0.25) 34.16887%, rgba(210, 105, 30, 0.5) 34.16887%, rgba(210, 105, 30, 0.5) 50.65963%, rgba(210, 105, 30, 0.25) 50.65963%, rgba(210, 105, 30, 0.25) 50.65963%, rgba(231, 146, 86, 0.5) 50.65963%, rgba(231, 146, 86, 0.5) 67.1504%, rgba(231, 146, 86, 0.25) 67.1504%, rgba(231, 146, 86, 0.25) 67.1504%, rgba(210, 105, 30, 0.5) 67.1504%, rgba(210, 105, 30, 0.5) 100%, rgba(210, 105, 30, 0.25) 100%, rgba(210, 105, 30, 0.25) 100%);
-    background-image: -moz-linear-gradient(left, rgba(231, 146, 86, 0.5), rgba(231, 146, 86, 0.5) 34.16887%, rgba(231, 146, 86, 0.25) 34.16887%, rgba(231, 146, 86, 0.25) 34.16887%, rgba(210, 105, 30, 0.5) 34.16887%, rgba(210, 105, 30, 0.5) 50.65963%, rgba(210, 105, 30, 0.25) 50.65963%, rgba(210, 105, 30, 0.25) 50.65963%, rgba(231, 146, 86, 0.5) 50.65963%, rgba(231, 146, 86, 0.5) 67.1504%, rgba(231, 146, 86, 0.25) 67.1504%, rgba(231, 146, 86, 0.25) 67.1504%, rgba(210, 105, 30, 0.5) 67.1504%, rgba(210, 105, 30, 0.5) 100%, rgba(210, 105, 30, 0.25) 100%, rgba(210, 105, 30, 0.25) 100%);
-    background-image: -o-linear-gradient(left, rgba(231, 146, 86, 0.5), rgba(231, 146, 86, 0.5) 34.16887%, rgba(231, 146, 86, 0.25) 34.16887%, rgba(231, 146, 86, 0.25) 34.16887%, rgba(210, 105, 30, 0.5) 34.16887%, rgba(210, 105, 30, 0.5) 50.65963%, rgba(210, 105, 30, 0.25) 50.65963%, rgba(210, 105, 30, 0.25) 50.65963%, rgba(231, 146, 86, 0.5) 50.65963%, rgba(231, 146, 86, 0.5) 67.1504%, rgba(231, 146, 86, 0.25) 67.1504%, rgba(231, 146, 86, 0.25) 67.1504%, rgba(210, 105, 30, 0.5) 67.1504%, rgba(210, 105, 30, 0.5) 100%, rgba(210, 105, 30, 0.25) 100%, rgba(210, 105, 30, 0.25) 100%);
-    background-image: linear-gradient(left, rgba(231, 146, 86, 0.5), rgba(231, 146, 86, 0.5) 34.16887%, rgba(231, 146, 86, 0.25) 34.16887%, rgba(231, 146, 86, 0.25) 34.16887%, rgba(210, 105, 30, 0.5) 34.16887%, rgba(210, 105, 30, 0.5) 50.65963%, rgba(210, 105, 30, 0.25) 50.65963%, rgba(210, 105, 30, 0.25) 50.65963%, rgba(231, 146, 86, 0.5) 50.65963%, rgba(231, 146, 86, 0.5) 67.1504%, rgba(231, 146, 86, 0.25) 67.1504%, rgba(231, 146, 86, 0.25) 67.1504%, rgba(210, 105, 30, 0.5) 67.1504%, rgba(210, 105, 30, 0.5) 100%, rgba(210, 105, 30, 0.25) 100%, rgba(210, 105, 30, 0.25) 100%);
-  }
-}
-@media (min-width: 990px) {
-  .page {
-    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(231, 146, 86, 0.5)), color-stop(26.16162%, rgba(231, 146, 86, 0.5)), color-stop(26.16162%, rgba(231, 146, 86, 0.25)), color-stop(26.16162%, rgba(231, 146, 86, 0.25)), color-stop(26.16162%, rgba(210, 105, 30, 0.5)), color-stop(38.78788%, rgba(210, 105, 30, 0.5)), color-stop(38.78788%, rgba(210, 105, 30, 0.25)), color-stop(38.78788%, rgba(210, 105, 30, 0.25)), color-stop(38.78788%, rgba(231, 146, 86, 0.5)), color-stop(51.41414%, rgba(231, 146, 86, 0.5)), color-stop(51.41414%, rgba(231, 146, 86, 0.25)), color-stop(51.41414%, rgba(231, 146, 86, 0.25)), color-stop(51.41414%, rgba(210, 105, 30, 0.5)), color-stop(76.56566%, rgba(210, 105, 30, 0.5)), color-stop(76.56566%, rgba(210, 105, 30, 0.25)), color-stop(76.56566%, rgba(210, 105, 30, 0.25)), color-stop(76.56566%, rgba(231, 146, 86, 0.5)), color-stop(100%, rgba(231, 146, 86, 0.5)), color-stop(100%, rgba(231, 146, 86, 0.25)), color-stop(100%, rgba(231, 146, 86, 0.25)));
-    background-image: -webkit-linear-gradient(left, rgba(231, 146, 86, 0.5), rgba(231, 146, 86, 0.5) 26.16162%, rgba(231, 146, 86, 0.25) 26.16162%, rgba(231, 146, 86, 0.25) 26.16162%, rgba(210, 105, 30, 0.5) 26.16162%, rgba(210, 105, 30, 0.5) 38.78788%, rgba(210, 105, 30, 0.25) 38.78788%, rgba(210, 105, 30, 0.25) 38.78788%, rgba(231, 146, 86, 0.5) 38.78788%, rgba(231, 146, 86, 0.5) 51.41414%, rgba(231, 146, 86, 0.25) 51.41414%, rgba(231, 146, 86, 0.25) 51.41414%, rgba(210, 105, 30, 0.5) 51.41414%, rgba(210, 105, 30, 0.5) 76.56566%, rgba(210, 105, 30, 0.25) 76.56566%, rgba(210, 105, 30, 0.25) 76.56566%, rgba(231, 146, 86, 0.5) 76.56566%, rgba(231, 146, 86, 0.5) 100%, rgba(231, 146, 86, 0.25) 100%, rgba(231, 146, 86, 0.25) 100%);
-    background-image: -moz-linear-gradient(left, rgba(231, 146, 86, 0.5), rgba(231, 146, 86, 0.5) 26.16162%, rgba(231, 146, 86, 0.25) 26.16162%, rgba(231, 146, 86, 0.25) 26.16162%, rgba(210, 105, 30, 0.5) 26.16162%, rgba(210, 105, 30, 0.5) 38.78788%, rgba(210, 105, 30, 0.25) 38.78788%, rgba(210, 105, 30, 0.25) 38.78788%, rgba(231, 146, 86, 0.5) 38.78788%, rgba(231, 146, 86, 0.5) 51.41414%, rgba(231, 146, 86, 0.25) 51.41414%, rgba(231, 146, 86, 0.25) 51.41414%, rgba(210, 105, 30, 0.5) 51.41414%, rgba(210, 105, 30, 0.5) 76.56566%, rgba(210, 105, 30, 0.25) 76.56566%, rgba(210, 105, 30, 0.25) 76.56566%, rgba(231, 146, 86, 0.5) 76.56566%, rgba(231, 146, 86, 0.5) 100%, rgba(231, 146, 86, 0.25) 100%, rgba(231, 146, 86, 0.25) 100%);
-    background-image: -o-linear-gradient(left, rgba(231, 146, 86, 0.5), rgba(231, 146, 86, 0.5) 26.16162%, rgba(231, 146, 86, 0.25) 26.16162%, rgba(231, 146, 86, 0.25) 26.16162%, rgba(210, 105, 30, 0.5) 26.16162%, rgba(210, 105, 30, 0.5) 38.78788%, rgba(210, 105, 30, 0.25) 38.78788%, rgba(210, 105, 30, 0.25) 38.78788%, rgba(231, 146, 86, 0.5) 38.78788%, rgba(231, 146, 86, 0.5) 51.41414%, rgba(231, 146, 86, 0.25) 51.41414%, rgba(231, 146, 86, 0.25) 51.41414%, rgba(210, 105, 30, 0.5) 51.41414%, rgba(210, 105, 30, 0.5) 76.56566%, rgba(210, 105, 30, 0.25) 76.56566%, rgba(210, 105, 30, 0.25) 76.56566%, rgba(231, 146, 86, 0.5) 76.56566%, rgba(231, 146, 86, 0.5) 100%, rgba(231, 146, 86, 0.25) 100%, rgba(231, 146, 86, 0.25) 100%);
-    background-image: linear-gradient(left, rgba(231, 146, 86, 0.5), rgba(231, 146, 86, 0.5) 26.16162%, rgba(231, 146, 86, 0.25) 26.16162%, rgba(231, 146, 86, 0.25) 26.16162%, rgba(210, 105, 30, 0.5) 26.16162%, rgba(210, 105, 30, 0.5) 38.78788%, rgba(210, 105, 30, 0.25) 38.78788%, rgba(210, 105, 30, 0.25) 38.78788%, rgba(231, 146, 86, 0.5) 38.78788%, rgba(231, 146, 86, 0.5) 51.41414%, rgba(231, 146, 86, 0.25) 51.41414%, rgba(231, 146, 86, 0.25) 51.41414%, rgba(210, 105, 30, 0.5) 51.41414%, rgba(210, 105, 30, 0.5) 76.56566%, rgba(210, 105, 30, 0.25) 76.56566%, rgba(210, 105, 30, 0.25) 76.56566%, rgba(231, 146, 86, 0.5) 76.56566%, rgba(231, 146, 86, 0.5) 100%, rgba(231, 146, 86, 0.25) 100%, rgba(231, 146, 86, 0.25) 100%);
-  }
 }
 @media (min-width: 990px) {
   .page {
@@ -285,9 +332,6 @@ table {
   }
 }
 
-.main-wrapper {
-  border: 1px solid red;
-}
 @media (min-width: 990px) {
   .main-wrapper {
     width: 76.56566%;
@@ -309,9 +353,6 @@ table {
   }
 }
 
-.region-sidebar-second {
-  border: 1px solid red;
-}
 @media (max-width: 989px) {
   .region-sidebar-second {
     width: 100%;
@@ -336,7 +377,6 @@ table {
 #header,
 #footer {
   clear: both;
-  border: 1px solid red;
 }
 @media (max-width: 989px) {
   #header,
@@ -468,6 +508,10 @@ table {
   }
 }
 
+.flexslider .flex-control-nav {
+  height: 35px;
+}
+
 @font-face {
   font-family: 'latobold';
   src: url("lato-bol-webfont.eot");
@@ -490,4 +534,132 @@ table {
   src: url("lato-reg-webfont.eot?#iefix") format("embedded-opentype"), url("lato-reg-webfont.woff") format("woff"), url("lato-reg-webfont.ttf") format("truetype"), url("lato-reg-webfont.svg#latoregular") format("svg");
   font-weight: normal;
   font-style: normal;
+}
+
+.region-header {
+  background: url("../images/bg_header.png") repeat left top transparent;
+}
+
+.region-footer {
+  background: url("../images/bg_footer.png") repeat left top transparent;
+}
+
+#block-user-login label {
+  display: none;
+}
+#block-user-login input {
+  background: #d7e2e5;
+  border: 0px;
+  border-left: 1px solid #97aaba;
+  border-top: 1px solid #97aaba;
+  font-family: "latoregular", arial, sans-serif;
+  font-size: 14px;
+}
+#block-user-login input[type="text"], #block-user-login input[type="password"] {
+  color: #343931;
+}
+#block-user-login input::-webkit-input-placeholder {
+  color: #343931;
+}
+#block-user-login input:-moz-placeholder {
+  color: #343931;
+}
+#block-user-login ul li {
+  list-style: none;
+}
+#block-user-login ul li a {
+  color: #feffff;
+  font-family: "latoregular", arial, sans-serif;
+  font-size: 14px;
+}
+#block-user-login ul li a:hover {
+  text-decoration: none;
+}
+#block-user-login .form-submit {
+  background: #2e93e1;
+  color: #ffffff;
+  font-family: "latobold", arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.menu-name-main-menu {
+  background: #1a4266;
+}
+.menu-name-main-menu ul {
+  border-bottom: 1px solid #203c56;
+}
+.menu-name-main-menu ul li a {
+  font-family: "latoregular", arial, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.menu-name-main-menu ul li.active-trail, .menu-name-main-menu ul li:hover {
+  background: #245078;
+  -moz-border-radius: 0 2px 0 0;
+  -webkit-border-radius: 0 2px 0 0;
+  border-radius: 0 2px 0 0;
+}
+.menu-name-main-menu.menu-level-2 {
+  background: #305b83;
+}
+.menu-name-main-menu.menu-level-2 li a {
+  font-size: 14px;
+}
+.menu-name-main-menu.menu-level-2 li.active-trail {
+  background: #3f719f;
+}
+
+#block-menu-menu-footer-menu ul li a {
+  font-family: "latoregular", arial, sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
+}
+#block-menu-menu-footer-menu ul li.active-trail, #block-menu-menu-footer-menu ul li:hover {
+  text-decoration: underline;
+}
+
+body {
+  background: url("../images/bg_common.png") left top;
+  font-family: "latoregular", arial, sans-serif;
+}
+
+.page {
+  box-shadow: 0px 11px 50px 2px #4e4e4e;
+  background: #e6ebee;
+}
+
+.flexslider .flex-control-nav {
+  background: url("../images/bg_slider_nav.png") left top repeat transparent;
+  border-top: 1px solid #b9bcaa;
+  border-bottom: 1px solid #d8d8cd;
+  bottom: 0;
+  z-index: 100;
+}
+.flexslider .flex-control-nav li {
+  margin: 9px 5px;
+}
+.flexslider .flex-control-nav li a {
+  background: url("../images/sprite.png") -7px -10px no-repeat transparent;
+  width: 15px;
+  height: 15px;
+  box-shadow: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.flexslider .flex-control-nav li a.flex-active, .flexslider .flex-control-nav li a:hover {
+  background: url("../images/sprite.png") -28px -10px no-repeat transparent;
+}
+.flexslider .flex-direction-nav li a.flex-prev {
+  background: url("../images/sprite.png") -28px -10px no-repeat transparent;
+}
+.flexslider .flex-direction-nav li a.flex-next {
+  background: url("../images/sprite.png") -28px -10px no-repeat transparent;
 }

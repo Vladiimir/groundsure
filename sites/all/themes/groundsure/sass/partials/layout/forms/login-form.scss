@@ -1,0 +1,35 @@
+////////////////////////
+// Design Partials
+//
+// Separate your Layout from Design
+// Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
+//
+// All styling, non box model properties go here
+////////////////////////
+
+#block-user-login{
+  width: 340px;
+  padding: 15px 20px 8px 20px;
+  ul{
+    margin: 0;
+    padding: 3px 0 9px;
+  }
+  .form-item{
+    margin: 0 18px 6px 0;
+    float: left;
+    clear: left;
+
+    input{
+      width: 173px;
+      height: 25px;
+      padding-left: 6px;
+    }
+  }
+  .form-actions{
+    margin: 0;
+    .form-submit{
+      width: 108px;
+      height: 25px;
+    }
+  }
+}

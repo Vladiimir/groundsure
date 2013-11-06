@@ -15,8 +15,12 @@ img, video {
   height: auto;
 }
 
+/*--------------common variables------------------------*/
+/*--------------common variables------------------------*/
 /*--------------font variables------------------------*/
 /*--------------end font variables--------------------*/
+/*--------------form variables------------------------*/
+/*--------------end form variables--------------------*/
 .clearfix:before, .clearfix:after {
   display: table;
   content: "";

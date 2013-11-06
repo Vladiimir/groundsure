@@ -1,0 +1,42 @@
+////////////////////////
+// Design Partials
+//
+// Separate your Layout from Design
+// Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
+//
+// All styling, non box model properties go here
+////////////////////////
+
+.flexslider{
+  .flex-control-nav{
+    background: url("../images/bg_slider_nav.png") left top repeat transparent;
+    border-top: 1px solid #b9bcaa;
+    border-bottom: 1px solid #d8d8cd;
+    bottom: 0;
+    z-index: 100;
+    li{
+      margin: 9px 5px;
+      a{
+        background: url("../images/sprite.png") -7px -10px no-repeat transparent;
+        width: 15px;
+        height: 15px;
+        box-shadow: none;
+        @include rounded_corners (0);
+        &.flex-active,
+        &:hover{
+          background: url("../images/sprite.png") -28px -10px  no-repeat transparent;
+        }
+      }
+    }
+  }
+  .flex-direction-nav{
+    li a{
+      &.flex-prev{
+         background: url("../images/sprite.png") -28px -10px  no-repeat transparent;
+       }
+      &.flex-next{
+        background: url("../images/sprite.png") -28px -10px  no-repeat transparent;
+      }
+    }
+  }
+}

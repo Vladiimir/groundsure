@@ -3,3 +3,8 @@
 //
 // All of your mixins should go in this file.
 ////////////////////////
+@mixin rounded_corners ($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}

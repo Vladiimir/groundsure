@@ -1,0 +1,25 @@
+////////////////////////
+// Design Partials
+//
+// Separate your Layout from Design
+// Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
+//
+// All styling, non box model properties go here
+////////////////////////
+
+#block-menu-menu-footer-menu{
+  ul{
+    margin: 0;
+    padding: 0 0 0 0px;
+    text-align: center;
+    li{
+      display: inline;
+      padding: 0px 4px 0px 0px;
+      margin: 0;
+      border-right: 1px solid #ffffff;
+      &.last{
+        border: none;
+      }
+    }
+  }
+}
