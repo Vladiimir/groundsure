@@ -7,6 +7,20 @@
 // All styling, non box model properties go here
 ////////////////////////
 
-.region-footer{
-  padding: 20px 0 35px;
+#block-block-8{
+  @include block-views-list();
+  .view-field-title{
+    font-weight: normal;
+    padding: 0 0 6px;
+    font-size: 16px;
+  }
+  .view-field-tag{
+    color: $link-color;
+  }
+  a{
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
 }

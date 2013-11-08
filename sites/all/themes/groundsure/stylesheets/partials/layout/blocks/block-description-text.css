@@ -1,0 +1,8 @@
+#block-block-12 .content {
+  padding: 20px;
+  min-height: 130px;
+}
+#block-block-12 .content p {
+  margin: 0;
+  width: 70%;
+}

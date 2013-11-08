@@ -1,12 +1,16 @@
 ////////////////////////
-// Design Partials
+// Layouts Partials
 //
 // Separate your Layout from Design
 // Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
 //
-// All styling, non box model properties go here
+// All box model properties go here
 ////////////////////////
 
-.region-footer{
-  padding: 20px 0 35px;
+.page{
+  //@include background-grid;
+  margin: 0 auto;
+  min-height: 100%;
+  max-width: 990px;
+  overflow: hidden;
 }

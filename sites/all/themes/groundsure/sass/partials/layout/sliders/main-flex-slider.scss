@@ -8,7 +8,41 @@
 ////////////////////////
 
 .flexslider{
+  margin: 0;
   .flex-control-nav{
+    bottom: 0;
     height: 35px;
+    li{
+      margin: 9px 5px;
+      a{
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+  .flex-direction-nav{
+    position: relative;
+    top: -7px;
+    li a{
+      width: 20px;
+      height: 20px;
+      &.flex-prev{
+        left: 320px;
+      }
+      &.flex-next{
+        right: 320px;
+      }
+    }
+  }
+  .field-name-body{
+    position: absolute;
+    top: 10px;
+    padding-left: 20px;
+  }
+  h5{
+    margin: 0;
+  }
+  p{
+    width: 45%;
   }
 }

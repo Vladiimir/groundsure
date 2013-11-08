@@ -1,11 +1,11 @@
 /*
-Syntax error: Undefined mixin 'breakpoint'.
-        on line 16 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/layout/basic/grids.scss, in `breakpoint'
-        from line 16 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/layout/basic/grids.scss
+Syntax error: Undefined mixin 'report_text_block'.
+        on line 20 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/layout/regions/main-prefix.scss, in `report_text_block'
+        from line 20 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/layout/regions/main-prefix.scss
 
 Backtrace:
-D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/layout/basic/grids.scss:16:in `breakpoint'
-D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/layout/basic/grids.scss:16
+D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/layout/regions/main-prefix.scss:20:in `report_text_block'
+D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/layout/regions/main-prefix.scss:20
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -45,14 +45,15 @@ C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:i
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:95:in `block (4 levels) in perform'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:39:in `delete'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:32:in `block in deleted'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:31:in `each'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:31:in `deleted'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:16:in `refresh'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block in run'
@@ -74,4 +75,4 @@ C:/Ruby193/bin/compass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'breakpoint'.\A         on line 16 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/layout/basic/grids.scss, in `breakpoint'\A         from line 16 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/layout/basic/grids.scss"; }
+  content: "Syntax error: Undefined mixin 'report_text_block'.\A         on line 20 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/layout/regions/main-prefix.scss, in `report_text_block'\A         from line 20 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/layout/regions/main-prefix.scss"; }

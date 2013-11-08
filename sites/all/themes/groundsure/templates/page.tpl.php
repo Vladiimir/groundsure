@@ -76,25 +76,27 @@
   <div class="clearfix"></div>
 
   <div class="main-wrapper">
-    <?php if ($page['main_prefix']): ?>
-      <?php print render($page['main_prefix']); ?>
-    <?php endif; ?>
+    <div class="main-prefix-wrapper">
+      <?php if ($page['main_prefix']): ?>
+        <?php print render($page['main_prefix']); ?>
+      <?php endif; ?>
 
-    <div class="clearfix"></div>
+      <div class="clearfix"></div>
 
-    <?php if ($page['main_prefix_first']): ?>
-       <?php print render($page['main_prefix_first']); ?>
-    <?php endif; ?>
+      <?php if ($page['main_prefix_first']): ?>
+         <?php print render($page['main_prefix_first']); ?>
+      <?php endif; ?>
 
-    <?php if ($page['main_prefix_second']): ?>
-       <?php print render($page['main_prefix_second']); ?>
-    <?php endif; ?>
+      <?php if ($page['main_prefix_second']): ?>
+         <?php print render($page['main_prefix_second']); ?>
+      <?php endif; ?>
 
-    <?php if ($page['main_prefix_third']): ?>
-       <?php print render($page['main_prefix_third']); ?>
-    <?php endif; ?>
+      <?php if ($page['main_prefix_third']): ?>
+         <?php print render($page['main_prefix_third']); ?>
+      <?php endif; ?>
 
-    <div class="clearfix"></div>
+      <div class="clearfix"></div>
+    </div>
 
     <?php if ($page['content']): ?>
       <main id="main" role="main">

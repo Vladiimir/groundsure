@@ -7,6 +7,10 @@
 // All styling, non box model properties go here
 ////////////////////////
 
-.region-footer{
-  padding: 20px 0 35px;
+#block-block-10{
+  .content{
+    .phone,.email{
+       padding-left: 25px;
+    }
+  }
 }

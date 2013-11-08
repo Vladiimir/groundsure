@@ -17,6 +17,8 @@
 ////////////////////////
 @import 'regions/header';
 @import 'regions/footer';
+@import 'regions/main-prefix';
+@import 'regions/main-suffix';
 
 ////////////////////////
 // Import forms
@@ -38,3 +40,14 @@
 // Import sliders
 ////////////////////////
 @import 'sliders/main-flex-slider';
+
+////////////////////////
+// Import blocks
+////////////////////////
+@import 'blocks/block-cpd-training';
+@import 'blocks/block-the-blog';
+@import 'blocks/block-discover-groundsure';
+@import 'blocks/block-contact-us';
+@import 'blocks/block-testimonial';
+@import 'blocks/block-page-title';
+@import 'blocks/block-description-text';

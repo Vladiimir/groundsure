@@ -1,11 +1,11 @@
 /*
-Syntax error: Undefined mixin 'breakpoint'.
-        on line 16 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/layout/basic/grids.scss, in `breakpoint'
-        from line 16 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/layout/basic/grids.scss
+Syntax error: Undefined mixin 'sidebar_block'.
+        on line 10 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/design/blocks/block-contact-us.scss, in `sidebar_block'
+        from line 10 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/design/blocks/block-contact-us.scss
 
 Backtrace:
-D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/layout/basic/grids.scss:16:in `breakpoint'
-D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/layout/basic/grids.scss:16
+D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/design/blocks/block-contact-us.scss:10:in `sidebar_block'
+D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/design/blocks/block-contact-us.scss:10
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -74,4 +74,4 @@ C:/Ruby193/bin/compass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'breakpoint'.\A         on line 16 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/layout/basic/grids.scss, in `breakpoint'\A         from line 16 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/layout/basic/grids.scss"; }
+  content: "Syntax error: Undefined mixin 'sidebar_block'.\A         on line 10 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/design/blocks/block-contact-us.scss, in `sidebar_block'\A         from line 10 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/design/blocks/block-contact-us.scss"; }

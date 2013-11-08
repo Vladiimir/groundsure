@@ -7,19 +7,14 @@
 // All styling, non box model properties go here
 ////////////////////////
 
-#block-menu-menu-footer-menu{
-  ul{
-    li{
-      a{
-        font-family: $font-normal-common;
-        font-size: 14px;
-        text-decoration: none;
-        color: #ffffff;
-      }
-      &.active-trail,
-      &:hover{
-        text-decoration: underline;
-        color: #ffffff;
+#block-block-3{
+  @include sidebar_block();
+  .content {
+    a{
+      @include button(13px, 32px, #3497e4, 3px);
+      line-height: 30px;
+      &.btn_green{
+        background: #509f10;
       }
     }
   }

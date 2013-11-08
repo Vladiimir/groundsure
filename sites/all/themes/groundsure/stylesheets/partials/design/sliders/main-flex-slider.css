@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined mixin 'rounded_corners'.
-        on line 24 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/design/sliders/main-flex-slider.scss, in `rounded_corners'
-        from line 24 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/design/sliders/main-flex-slider.scss
+        on line 21 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/design/sliders/main-flex-slider.scss, in `rounded_corners'
+        from line 21 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/design/sliders/main-flex-slider.scss
 
 Backtrace:
-D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/design/sliders/main-flex-slider.scss:24:in `rounded_corners'
-D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/design/sliders/main-flex-slider.scss:24
+D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/design/sliders/main-flex-slider.scss:21:in `rounded_corners'
+D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/design/sliders/main-flex-slider.scss:21
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -104,4 +104,4 @@ C:/Ruby193/bin/compass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'rounded_corners'.\A         on line 24 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/design/sliders/main-flex-slider.scss, in `rounded_corners'\A         from line 24 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/design/sliders/main-flex-slider.scss"; }
+  content: "Syntax error: Undefined mixin 'rounded_corners'.\A         on line 21 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/design/sliders/main-flex-slider.scss, in `rounded_corners'\A         from line 21 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/design/sliders/main-flex-slider.scss"; }

@@ -7,6 +7,6 @@
 // All styling, non box model properties go here
 ////////////////////////
 
-.region-footer{
-  padding: 20px 0 35px;
+#block-block-11{
+  @include sidebar_block();
 }

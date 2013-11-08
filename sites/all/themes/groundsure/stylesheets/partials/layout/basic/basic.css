@@ -1,0 +1,6 @@
+.page {
+  margin: 0 auto;
+  min-height: 100%;
+  max-width: 990px;
+  overflow: hidden;
+}

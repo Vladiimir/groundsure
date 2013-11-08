@@ -1,12 +1,12 @@
 /*
-Syntax error: Undefined mixin 'breakpoint'.
-        on line 16 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/layout/basic/grids.scss, in `breakpoint'
-        from line 16 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/layout/basic/grids.scss
+Syntax error: Undefined variable: "$font-light-common".
+        on line 11 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/design/blocks/block-page-title.scss
 
 Backtrace:
-D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/layout/basic/grids.scss:16:in `breakpoint'
-D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/layout/basic/grids.scss:16
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
+D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/design/blocks/block-page-title.scss:11
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/script/variable.rb:49:in `_perform'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/script/node.rb:40:in `perform'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -74,4 +74,4 @@ C:/Ruby193/bin/compass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'breakpoint'.\A         on line 16 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/layout/basic/grids.scss, in `breakpoint'\A         from line 16 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/layout/basic/grids.scss"; }
+  content: "Syntax error: Undefined variable: \"$font-light-common\".\A         on line 11 of D:/portable/OpenServer/domains/groundsure/sites/all/themes/groundsure/sass/partials/design/blocks/block-page-title.scss"; }

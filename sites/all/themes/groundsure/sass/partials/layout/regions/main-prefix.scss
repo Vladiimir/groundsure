@@ -7,6 +7,15 @@
 // All styling, non box model properties go here
 ////////////////////////
 
-.region-footer{
-  padding: 20px 0 35px;
+.region-main-prefix-first,
+.region-main-prefix-second,
+.region-main-prefix-third
+{
+  padding: 35px 0 45px;
+}
+.region-main-prefix-first .block,
+.region-main-prefix-second .block,
+.region-main-prefix-third .block
+{
+  @include report_text_block ();
 }

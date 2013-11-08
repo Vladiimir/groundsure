@@ -7,6 +7,13 @@
 // All styling, non box model properties go here
 ////////////////////////
 
-.region-footer{
-  padding: 20px 0 35px;
+#block-block-12{
+ .content{
+   background: url("../images/house.png") 96% bottom no-repeat #f0fee3;
+   border-top: 1px solid #ffffff;
+   border-bottom: 10px solid #54bd00;
+   p{
+     font-size: 14px;
+   }
+ }
 }

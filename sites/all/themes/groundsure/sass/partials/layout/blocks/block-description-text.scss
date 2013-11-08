@@ -7,6 +7,13 @@
 // All styling, non box model properties go here
 ////////////////////////
 
-.region-footer{
-  padding: 20px 0 35px;
+#block-block-12{
+  .content{
+    padding: 20px;
+    min-height: 130px;
+    p{
+      margin: 0;
+      width: 70%;
+    }
+  }
 }

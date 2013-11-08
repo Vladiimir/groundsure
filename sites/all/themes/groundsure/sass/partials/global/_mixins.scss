@@ -8,3 +8,102 @@
   -webkit-border-radius: $radius;
   border-radius: $radius;
 }
+
+@mixin report_text_block () {
+padding: 0px 20px 0px 20px;
+  p{
+    margin: 0;
+    padding: 10px 0;
+    font-size: 13px;
+  }
+  h3{
+    margin: 0;
+    padding: 5px 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 17px;
+  }
+}
+
+@mixin block-views-list () {
+  h2{
+    margin: 7px 0 6px;
+    font-weight: normal;
+    font-size: 22px;
+  }
+  .content{
+    background: #ffffff;
+    border: 1px solid #DEDED3;
+    @include rounded_corners(3px);
+  }
+  .view-header,
+  .view-suffix,
+  .view-row {
+    border-bottom: 1px solid #DEDED3;
+    padding: 10px;
+    font-size: 14px;
+    &.last-row{
+      border-bottom: none;
+    }
+  }
+  .view-suffix{
+    font-weight: bold;
+    font-size: 16px;
+    a{
+      float: right;
+      font-weight: normal;
+      font-size: 14px;
+    }
+  }
+  .view-field-title{
+    font-weight: bold;
+    padding: 3px 0;
+  }
+  .view-field-sign-btn{
+    float: right;
+  }
+  .view-field-tag,
+  .view-field-author{
+    display: inline;
+  }
+}
+
+@mixin button($fSize, $bHeight, $bColor, $bRadius){
+   display: inline-block;
+   height: $bHeight;
+   background: $bColor;
+   @include rounded_corners($bRadius);
+   font-size: $fSize;
+   text-decoration: none;
+   font-weight: bold;
+   color: #ffffff;
+   padding: 0 10px;
+   text-align: center;
+   -moz-box-shadow: inset 0 -6px 7px -6px #000;
+   -webkit-box-shadow: inset 0 -6px 7px -6px #000;
+   box-shadow: inset 0 -4px 7px -6px #000;
+   text-shadow: 0px 0px 2px #000;
+}
+
+@mixin sidebar_block(){
+  h2{
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+    background: #fdfdfd;
+    border-top: 1px solid #deded3;
+    border-bottom: 1px solid #deded3;
+    padding: 8px 20px;
+  }
+  .content{
+    padding: 20px 20px 10px;
+    p{
+      margin: 0;
+      padding-bottom: 10px;
+      font-size: 14px;
+    }
+    img{
+      margin: 10px 0;
+    }
+  }
+}

@@ -7,20 +7,12 @@
 // All styling, non box model properties go here
 ////////////////////////
 
-#block-menu-menu-footer-menu{
-  ul{
-    li{
-      a{
-        font-family: $font-normal-common;
-        font-size: 14px;
-        text-decoration: none;
-        color: #ffffff;
-      }
-      &.active-trail,
-      &:hover{
-        text-decoration: underline;
-        color: #ffffff;
-      }
+#block-block-9{
+  @include block-views-list();
+  .view-field-sign-btn{
+    a{
+      @include button(16px, 26px, #2e94e3, 3px);
+      line-height: 24px;
     }
   }
 }

@@ -1,0 +1,32 @@
+////////////////////////
+// Design Partials
+//
+// Separate your Layout from Design
+// Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
+//
+// All styling, non box model properties go here
+////////////////////////
+
+#page-title{
+  font-family: $font-light-common;
+  font-weight: normal;
+  font-size: 28px;
+  background: #dbf4c4;
+  border-bottom: 1px solid #deded3;
+}
+#block-block-13{
+  .content p{
+    margin: 0;
+    a{
+      display: inline-block;
+      border: 1px solid #c8d6b5;
+      @include rounded_corners(4px);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      color: #0974c7;
+      line-height: 23px;
+      background: url("../images/sprite.png") -5px -114px no-repeat #edf9e1;
+    }
+  }
+}

@@ -8,18 +8,15 @@
 ////////////////////////
 
 .flexslider{
+  border: none;
   .flex-control-nav{
     background: url("../images/bg_slider_nav.png") left top repeat transparent;
     border-top: 1px solid #b9bcaa;
     border-bottom: 1px solid #d8d8cd;
-    bottom: 0;
     z-index: 100;
     li{
-      margin: 9px 5px;
       a{
         background: url("../images/sprite.png") -7px -10px no-repeat transparent;
-        width: 15px;
-        height: 15px;
         box-shadow: none;
         @include rounded_corners (0);
         &.flex-active,
@@ -30,13 +27,25 @@
     }
   }
   .flex-direction-nav{
+    z-index: 110;
     li a{
       &.flex-prev{
-         background: url("../images/sprite.png") -28px -10px  no-repeat transparent;
+        background: url("../images/sprite.png") -4px -37px  no-repeat transparent;
        }
       &.flex-next{
-        background: url("../images/sprite.png") -28px -10px  no-repeat transparent;
+        background: url("../images/sprite.png") -25px -37px  no-repeat transparent;
+      }
+      &:before{
+        text-indent: 30px;
       }
     }
+  }
+  h5{
+    font-family: $font-light-common;
+    font-size: 32px;
+    font-weight: normal;
+  }
+  p{
+    font-size: 14px;
   }
 }
