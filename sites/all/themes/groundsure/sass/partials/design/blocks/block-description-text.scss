@@ -12,6 +12,9 @@
    background: url("../images/house.png") 96% bottom no-repeat #f0fee3;
    border-top: 1px solid #ffffff;
    border-bottom: 10px solid #54bd00;
+   @include breakpoint(max-width 767px){
+     background: #f0fee3;
+   }
    p{
      font-size: 14px;
    }

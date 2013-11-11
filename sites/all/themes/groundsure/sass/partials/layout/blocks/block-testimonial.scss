@@ -7,3 +7,18 @@
 // All styling, non box model properties go here
 ////////////////////////
 
+#block-block-11{
+  @include breakpoint(max-width 989px){
+    clear: both;
+    .content{
+      padding-bottom: 35px!important;
+      p{
+        display: inline-block;
+        vertical-align: top;
+        img{
+          margin: 0 0 0 20px;
+        }
+      }
+    }
+  }
+}

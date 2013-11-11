@@ -21,3 +21,13 @@
 {
   @include report_text_block ();
 }
+.region-main-prefix-first,
+.region-main-prefix-second,
+.region-main-prefix-third
+{
+  @include breakpoint(max-width 767px){
+    border-bottom: 1px solid #deded3;
+    border-right: none;
+    padding: 20px 0 35px;
+  }
+}

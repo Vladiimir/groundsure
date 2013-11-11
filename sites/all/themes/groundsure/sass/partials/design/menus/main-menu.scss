@@ -38,4 +38,28 @@
       }
     }
   }
+  .menu-mlid-438{
+    display: none;
+  }
+}
+@include breakpoint(max-width 767px){
+  #footer .menu-name-main-menu{
+    li{
+      border-top: 1px solid #5f7b94;
+      border-right: 1px solid #5f7b94;
+      border-bottom: 1px solid #2e362d;
+      border-left: 1px solid #2e362d;
+    }
+    h3{
+      margin: 0;
+      padding: 5px 25px;
+      font-weight: normal;
+      font-size: 16px;
+      color: #ffffff;
+      background: #57748e;
+    }
+  }
+  .menu-mlid-438{
+    display: block;
+  }
 }

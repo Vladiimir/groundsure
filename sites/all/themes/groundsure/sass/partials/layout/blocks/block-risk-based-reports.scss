@@ -1,0 +1,88 @@
+////////////////////////
+// Design Partials
+//
+// Separate your Layout from Design
+// Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
+//
+// All styling, non box model properties go here
+////////////////////////
+
+.view-groundsure-residential-reports{
+  .view-header{
+    h2{
+      margin: 0;
+      padding: 20px;
+    }
+    p{
+      float: right;
+      margin: 0;
+      padding: 20px;
+      .simbol{
+        width: 120px;
+        padding-left: 50px;
+      }
+    }
+  }
+  .views-table{
+    width: 100%;
+  }
+  .view-content{
+    th{
+      padding: 15px;
+      &.main-col{
+        padding: 11px;
+      }
+    }
+    td{
+      .simbol{
+        width: 35px;
+        height: 30px;
+      }
+      &.main-col{
+        padding: 15px;
+        min-width: 235px;
+      }
+    }
+  }
+  .repotr-info{
+    width: 20px;
+    height: 20px;
+    float: right;
+    position: relative;
+    .field-name-field-report-info{
+      position: absolute;
+      right: 20px;
+      padding: 5px;
+      min-width: 130px;
+      top: 0;
+    }
+  }
+  .repotr-title{
+    padding-bottom: 10px;
+    width: 90%;
+  }
+  .repotr-insurance{
+    float: right;
+  }
+  .attachment-after{
+    .views-row{
+      width: 30%;
+      padding: 15px;
+    }
+  }
+  @include breakpoint(max-width 767px){
+    .view-content{
+      th{
+        padding: 5px;
+        &.main-col{
+          padding: 5px;
+        }
+      }
+    }
+    .attachment-after{
+      .views-row{
+        width: 100%;
+      }
+    }
+  }
+}

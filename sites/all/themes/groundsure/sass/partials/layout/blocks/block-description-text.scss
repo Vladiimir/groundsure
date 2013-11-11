@@ -15,5 +15,11 @@
       margin: 0;
       width: 70%;
     }
+    @include breakpoint(max-width 767px){
+      min-height: inherit;
+      p{
+        width: 100%;
+      }
+    }
   }
 }

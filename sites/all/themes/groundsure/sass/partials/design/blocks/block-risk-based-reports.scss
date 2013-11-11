@@ -1,0 +1,133 @@
+////////////////////////
+// Design Partials
+//
+// Separate your Layout from Design
+// Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
+//
+// All styling, non box model properties go here
+////////////////////////
+
+.view-groundsure-residential-reports{
+  .view-header{
+    background: #f3f3eb;
+    h2{
+      font-size: 28px;
+      font-family: $font-light-common;
+      font-weight: normal;
+    }
+    p{
+      font-size: 14px;
+      .simbol{
+        display: inline-block;
+        &.yes{
+          background: url("../images/sprite.png") -50px 0px no-repeat transparent;
+        }
+        &.no{
+          background: url("../images/sprite.png") -50px -33px no-repeat transparent;
+        }
+      }
+    }
+  }
+  .views-table{
+    td{
+      border: 1px solid #d4d5c8;
+    }
+  }
+  .view-content{
+    th{
+      background: #deded3;
+      border: 1px solid #b9bcaa;
+      font-size: 13px;
+      font-weight: normal;
+      -moz-box-shadow: inset 1px 1px 0 0 #f8f8f6;
+      -webkit-box-shadow: inset 1px 1px 0 0 #f8f8f6;
+      box-shadow: inset 1px 1px 0 0 #f8f8f6;
+      &.main-col{
+        font-size: 16px;
+      }
+    }
+    tr.odd td{
+      background: #fbfbf6;
+    }
+    tr.even td{
+      background: #f5f5ee;
+    }
+    tr.odd td.main-col{
+      background: #f2fde7;
+    }
+    tr.even td.main-col{
+      background: #e5f8d4;
+    }
+    tr th.main-col{
+      background: #d9f5c1;
+    }
+    td{
+      text-align: center;
+      .simbol{
+        display: inline-block;
+        &.yes{
+          background: url("../images/sprite.png") -56px 0px no-repeat transparent;
+        }
+        &.no{
+          background: url("../images/sprite.png") -56px -33px no-repeat transparent;
+        }
+      }
+      &.main-col{
+        text-align: left;
+      }
+    }
+  }
+  .repotr-info{
+    background: url("../images/sprite.png") -6px -140px no-repeat transparent;
+    cursor: pointer;
+    .field-name-field-report-info{
+      background: #fbfbf6;
+      border: 1px solid #d4d5c8;
+      @include rounded_corners(4px);
+      font-size: 12px;
+      display: none;
+    }
+  }
+  .repotr-title{
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+    a{
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  .repotr-price{
+    font-size: 14px;
+  }
+  .repotr-insurance{
+    font-size: 14px;
+  }
+  .attachment-after{
+    .view-header{
+      background: #deded3;
+      border-top: 1px solid #f5f5ee;
+      border-bottom: 1px solid #979a93;
+    }
+    .views-row{
+      display: table-cell;
+      border-right: 1px solid #D4D5C8;
+      &.views-row-last{
+        border-right: none;
+      }
+    }
+  }
+  @include breakpoint(max-width 767px){
+    .attachment-after{
+      .views-row{
+        display: block;
+        border-bottom: 1px solid #D4D5C8;
+        &.views-row-last{
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}

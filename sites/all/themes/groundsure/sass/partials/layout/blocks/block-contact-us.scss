@@ -13,4 +13,7 @@
        padding-left: 25px;
     }
   }
+  @include breakpoint(max-width 989px){
+    @include grid-span(1, 2, 2);
+  }
 }

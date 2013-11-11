@@ -189,3 +189,56 @@ function groundsure_form_user_login_block_alter(&$form, &$form_state, $form_id) 
   $form['pass']['#placeholder'] = 'Password';
   $form['links']['#markup'] = '<ul><li class="first">' . l(t('forgot password?'), 'user/password', array('attributes' => array('title' => 'Request new password via e-mail.'))) . '</li></ul>';
 }
+
+function groundsure_preprocess_views_view_table(&$vars) {
+  $view = $vars['view'];
+  $options = $view->style_plugin->options;
+  $handler = $view->style_plugin;
+  $fields = &$view->field;
+  $columns = $handler->sanitize_columns($options['columns'], $fields);
+  $active = !empty($handler->active) ? $handler->active : '';
+  $order = !empty($handler->order) ? $handler->order : 'asc';
+  $query = tablesort_get_query_parameters();
+  if (isset($view->exposed_raw_input)) {
+    $query += $view->exposed_raw_input;
+  }
+
+  foreach ($columns as $field => $column) {
+  // render the header labels
+    if ($field == $column && empty($fields[$field]->options['exclude'])) {
+      $label = filter_xss_admin(!empty($fields[$field]) ? $fields[$field]->label() : ''); // THIS is the only line changed so far.
+      if (empty($options['info'][$field]['sortable']) || !$fields[$field]->click_sortable()) {
+        $vars['header'][$field] = $label;
+      }
+      else {
+        $initial = !empty($options['info'][$field]['default_sort_order']) ? $options['info'][$field]['default_sort_order'] : 'asc';
+
+        if ($active == $field) {
+          $initial = ($order == 'asc') ? 'desc' : 'asc';
+        }
+
+        $title = t('sort by @s', array('@s' => $label));
+        if ($active == $field) {
+          $label .= theme('tablesort_indicator', array('style' => $initial));
+        }
+
+        $query['order'] = $field;
+        $query['sort'] = $initial;
+        $link_options = array(
+        'html' => TRUE,
+        'attributes' => array('title' => $title),
+        'query' => $query,
+        );
+        $vars['header'][$field] = l($label, $_GET['q'], $link_options);
+      }
+
+      // Add a header label wrapper if one was selected.
+      if ($vars['header'][$field]) {
+        $element_label_type = $fields[$field]->element_label_type(TRUE, TRUE);
+        if ($element_label_type) {
+          $vars['header'][$field] = '<' . $element_label_type . '>' . $vars['header'][$field] . '</' . $element_label_type . '>';
+        }
+      }
+    }
+  }
+}

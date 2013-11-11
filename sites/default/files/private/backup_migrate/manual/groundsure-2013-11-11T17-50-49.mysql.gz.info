@@ -1,0 +1,8 @@
+filename = "groundsure-2013-11-11T17-50-49"
+description = ""
+datestamp = "1384185050"
+generator = "Backup and Migrate (http://drupal.org/project/backup_migrate)"
+generatorversion = "7.x-2.x"
+sites[0][version] = "7.23"
+sites[0][name] = "groundsure"
+sites[0][url] = "http://groundsure/"

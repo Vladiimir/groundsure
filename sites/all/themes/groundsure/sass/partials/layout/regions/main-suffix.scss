@@ -15,3 +15,13 @@
 {
   padding: 10px 20px 20px 10px!important;
 }
+@include breakpoint(max-width 767px){
+  .region-main-suffix-first
+  {
+    padding: 20px!important;
+  }
+  .region-main-suffix-second
+  {
+    padding: 20px!important;
+  }
+}

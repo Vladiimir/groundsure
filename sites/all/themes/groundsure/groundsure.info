@@ -35,6 +35,7 @@ stylesheets[print][] = 'stylesheets/print.css'
 
 ; If installed through Bower
 ; scripts[] = 'components/formalize/assets/js/jquery.formalize.min.js'
+scripts[] = 'js/script.js'
 
 ; ========================================
 ; Modernizr

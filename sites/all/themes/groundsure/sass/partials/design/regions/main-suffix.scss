@@ -11,3 +11,8 @@
 .region-main-suffix-second{
   background: #f2f1eb;
 }
+@include breakpoint(max-width 767px){
+  .region-main-suffix-first{
+    border-bottom: 1px solid #deded3;
+  }
+}

@@ -9,4 +9,10 @@
 
 .region-footer{
   padding: 20px 0 35px;
+  @include breakpoint(max-width 989px){
+    padding: 20px 140px 35px;
+  }
+  @include breakpoint(max-width 767px){
+    padding: 20px 105px 35px;
+  }
 }

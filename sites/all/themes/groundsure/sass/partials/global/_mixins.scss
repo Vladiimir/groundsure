@@ -15,6 +15,7 @@ padding: 0px 20px 0px 20px;
     margin: 0;
     padding: 10px 0;
     font-size: 13px;
+    text-align: center;
   }
   h3{
     margin: 0;
@@ -22,6 +23,21 @@ padding: 0px 20px 0px 20px;
     font-weight: normal;
     text-transform: uppercase;
     font-size: 17px;
+  }
+  .image{
+    text-align: center;
+  }
+  @include breakpoint(max-width 767px){
+    .image{
+      float: left;
+      width: 200px;
+      margin-top: 15px;
+    }
+    p{
+      text-align: left;
+      padding: 0;
+      margin-left: 200px;
+    }
   }
 }
 
@@ -104,6 +120,23 @@ padding: 0px 20px 0px 20px;
     }
     img{
       margin: 10px 0;
+    }
+  }
+  @include breakpoint(max-width 989px){
+    h2{
+      background: #cedae0;
+      border-top: 1px solid #b8c8d5;
+      border-bottom: 1px solid #b8c8d5;
+      padding: 8px 20px;
+      -moz-box-shadow: inset 1px 1px 0 0 #f0f4f5;
+      -webkit-box-shadow: inset 1px 1px 0 0 #f0f4f5;
+      box-shadow: inset 1px 1px 0 0 #f0f4f5;
+    }
+    .content{
+      height: 100%;
+      -moz-box-shadow: inset 1px 1px 0 0 #f0f4f5;
+      -webkit-box-shadow: inset 1px 1px 0 0 #f0f4f5;
+      box-shadow: inset 1px 1px 0 0 #f0f4f5;
     }
   }
 }
