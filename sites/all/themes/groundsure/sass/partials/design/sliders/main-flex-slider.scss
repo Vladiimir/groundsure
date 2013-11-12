@@ -48,4 +48,13 @@
   p{
     font-size: 14px;
   }
+  @include breakpoint(max-width 480px){
+    li{
+      background: #ebfedb;
+      img{
+        opacity: 0;
+        display: none!important;
+      }
+    }
+  }
 }

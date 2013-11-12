@@ -63,3 +63,9 @@
     display: block;
   }
 }
+@include breakpoint(max-width 479px){
+  #footer .menu-name-main-menu li,
+  #footer .menu-name-main-menu h3{
+    padding: 5px 10px;
+  }
+}

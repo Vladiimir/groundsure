@@ -14,6 +14,16 @@
     }
   }
   @include breakpoint(max-width 989px){
+    @include grid-span(3, 4, 10);
+  }
+  @include breakpoint(max-width 767px){
     @include grid-span(1, 2, 2);
+  }
+  @include breakpoint(max-width 479px){
+    @include grid-span(1, 1, 1);
+    .content{
+      padding-bottom: 10px!important;
+    }
+
   }
 }

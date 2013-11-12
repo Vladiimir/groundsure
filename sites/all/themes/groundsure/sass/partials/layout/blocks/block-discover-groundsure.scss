@@ -15,7 +15,22 @@
     }
   }
   @include breakpoint(max-width 989px){
+    @include grid-span(3, 1, 10);
+    //padding-bottom: 1000px;
+    //margin-bottom: -1000px;
+  }
+  @include breakpoint(max-width 767px){
     @include grid-span(1, 1, 2);
     border-right: 1px solid #b8c8d5;
+    .content {
+      a{
+        max-width: 200px;
+      }
+    }
+  }
+  @include breakpoint(max-width 479px){
+    @include grid-span(1, 1, 1);
+    border-right: 0px solid #b8c8d5;
+    padding-bottom: 5px;
   }
 }

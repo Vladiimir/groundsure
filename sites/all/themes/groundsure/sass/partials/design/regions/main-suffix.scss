@@ -16,3 +16,10 @@
     border-bottom: 1px solid #deded3;
   }
 }
+@include breakpoint(max-width 479px){
+  .region-main-suffix-first,
+  .region-main-suffix-second
+  {
+    border-bottom: 0px solid #deded3;
+  }
+}

@@ -25,3 +25,13 @@
     padding: 20px!important;
   }
 }
+@include breakpoint(max-width 479px){
+  .region-main-suffix-first
+  {
+    padding: 0px!important;
+  }
+  .region-main-suffix-second
+  {
+    padding: 0px!important;
+  }
+}

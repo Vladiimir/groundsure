@@ -39,6 +39,15 @@ padding: 0px 20px 0px 20px;
       margin-left: 200px;
     }
   }
+  @include breakpoint(max-width 479px){
+    padding: 0 10px;
+    .image{
+      display: none;
+    }
+    p{
+      margin-left: 0;
+    }
+  }
 }
 
 @mixin block-views-list () {
@@ -55,6 +64,7 @@ padding: 0px 20px 0px 20px;
   .view-header,
   .view-suffix,
   .view-row {
+    overflow: hidden;
     border-bottom: 1px solid #DEDED3;
     padding: 10px;
     font-size: 14px;
@@ -74,13 +84,52 @@ padding: 0px 20px 0px 20px;
   .view-field-title{
     font-weight: bold;
     padding: 3px 0;
+    float: left;
+    clear: left;
+  }
+  .view-field-address{
+    float: left;
+    clear: left;
   }
   .view-field-sign-btn{
-    float: right;
+    display: block;
+    text-align: right;
   }
-  .view-field-tag,
+  .view-field-tag{
+    display: inline-block;
+    clear: left;
+  }
   .view-field-author{
     display: inline;
+  }
+  @include breakpoint(max-width 479px){
+    .content{
+      @include rounded_corners(0);
+    }
+    h2{
+      padding: 10px 0 0 10px;
+    }
+    .view-suffix{
+      font-size: 14px;
+    }
+  }
+  @include breakpoint(max-width 319px){
+    .view-suffix a{
+      float: none;
+      display: block;
+      padding-top: 7px;
+    }
+    .view-field-sign-btn{
+      float: none;
+      text-align: left;
+      padding-top: 5px;
+    }
+    .view-field-title{
+      float: none;
+    }
+    .view-field-address{
+      float: none;
+    }
   }
 }
 
@@ -127,6 +176,7 @@ padding: 0px 20px 0px 20px;
       background: #cedae0;
       border-top: 1px solid #b8c8d5;
       border-bottom: 1px solid #b8c8d5;
+      border-right: 1px solid #b8c8d5;
       padding: 8px 20px;
       -moz-box-shadow: inset 1px 1px 0 0 #f0f4f5;
       -webkit-box-shadow: inset 1px 1px 0 0 #f0f4f5;
@@ -134,9 +184,39 @@ padding: 0px 20px 0px 20px;
     }
     .content{
       height: 100%;
+      border-right: 1px solid #b8c8d5;
       -moz-box-shadow: inset 1px 1px 0 0 #f0f4f5;
       -webkit-box-shadow: inset 1px 1px 0 0 #f0f4f5;
       box-shadow: inset 1px 1px 0 0 #f0f4f5;
+      padding-bottom: 1000px;
+      margin-bottom: -1000px;
+    }
+  }
+  @include breakpoint(max-width 767px){
+    h2{
+      background: #cedae0;
+      border-top: 1px solid #b8c8d5;
+      border-bottom: 1px solid #b8c8d5;
+      border-right: none;
+      padding: 8px 20px;
+      -moz-box-shadow: inset 1px 1px 0 0 #f0f4f5;
+      -webkit-box-shadow: inset 1px 1px 0 0 #f0f4f5;
+      box-shadow: inset 1px 1px 0 0 #f0f4f5;
+    }
+    .content{
+      height: 100%;
+      border-right: none;
+      -moz-box-shadow: inset 1px 1px 0 0 #f0f4f5;
+      -webkit-box-shadow: inset 1px 1px 0 0 #f0f4f5;
+      box-shadow: inset 1px 1px 0 0 #f0f4f5;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+  }
+  @include breakpoint(max-width 479px){
+    .content{
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 }

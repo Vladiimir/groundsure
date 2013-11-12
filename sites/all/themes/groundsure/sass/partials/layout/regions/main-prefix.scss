@@ -12,10 +12,21 @@
 .region-main-prefix-third
 {
   padding: 35px 0 45px;
+  @include breakpoint(max-width 767px){
+    padding: 20px 0 35px;
+  }
 }
 .region-main-prefix-first .block,
 .region-main-prefix-second .block,
 .region-main-prefix-third .block
 {
   @include report_text_block ();
+}
+@include breakpoint(max-width 479px){
+  .region-main-prefix-first,
+  .region-main-prefix-second,
+  .region-main-prefix-third
+  {
+    padding: 20px 0 20px;
+  }
 }

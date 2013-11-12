@@ -9,7 +9,15 @@
 
 #block-block-11{
   @include breakpoint(max-width 989px){
+    @include grid-span(4, 7, 10);
+    //padding-bottom: 1000px;
+    //margin-bottom: -1000px;
+  }
+  @include breakpoint(max-width 767px){
+    @include grid-span(1, 1);
+    width: 100%;
     clear: both;
+    float: none;
     .content{
       padding-bottom: 35px!important;
       p{
@@ -21,4 +29,13 @@
       }
     }
   }
+  @include breakpoint(max-width 479px){
+    .content{
+      padding-bottom: 10px!important;
+      p img{
+        margin-left: 0;
+      }
+    }
+  }
+
 }

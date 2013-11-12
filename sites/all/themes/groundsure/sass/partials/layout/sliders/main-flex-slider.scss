@@ -32,6 +32,14 @@
       &.flex-next{
         right: 320px;
       }
+      @include breakpoint(max-width 767px){
+        &.flex-prev{
+          left: 265px;
+        }
+        &.flex-next{
+          right: 265px;
+        }
+      }
     }
   }
   .field-name-body{
@@ -44,5 +52,16 @@
   }
   p{
     width: 45%;
+  }
+  @include breakpoint(max-width 480px){
+    p{
+      width: 100%;
+    }
+    .field-name-body{
+      position: relative;
+      top: 10px;
+      padding-right: 20px;
+      padding-bottom: 45px;
+    }
   }
 }
