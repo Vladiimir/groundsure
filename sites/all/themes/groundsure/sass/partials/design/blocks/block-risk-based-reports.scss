@@ -135,4 +135,56 @@
       font-size: 20px;
     }
   }
+  @include breakpoint(max-width 540px){
+    thead{
+      display: none;
+    }
+    .view-content tr{
+      display: block;
+      background: #f2fde7;
+      td{
+        display: inline-block;
+        border: none;
+        background: #f2fde7!important;
+      }
+      td.main-col.first-col{
+        display: block;
+        background: #d9f5c1!important;
+        border-bottom: 1px solid #d4d5c8;
+      }
+      td.main-col.last-col{
+        display: none;
+      }
+      .cell-title{
+        display: inline-block;
+        font-size: 13px;
+      }
+    }
+    .repotr-price{
+      display: inline-block;
+      border-left: 1px solid #343931;
+    }
+    .repotr-insurance{
+      display: inline-block;
+      border-left: 1px solid #343931;
+    }
+    .attachment{
+      .repotr-price{
+        display: inline-block;
+        border-left: 0px solid #343931;
+      }
+    }
+    .view-header{
+      p{
+        .simbol{
+          &.no{
+            background: url("../images/sprite.png") no-repeat scroll -57px -33px rgba(0, 0, 0, 0);
+          }
+          &.yes{
+            background: url("../images/sprite.png") no-repeat scroll -61px 0 rgba(0, 0, 0, 0);
+          }
+        }
+      }
+    }
+  }
 }

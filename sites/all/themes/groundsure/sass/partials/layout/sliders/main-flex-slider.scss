@@ -34,10 +34,10 @@
       }
       @include breakpoint(max-width 767px){
         &.flex-prev{
-          left: 265px;
+          left: 34%//265px;
         }
         &.flex-next{
-          right: 265px;
+          right: 34%//265px;
         }
       }
     }

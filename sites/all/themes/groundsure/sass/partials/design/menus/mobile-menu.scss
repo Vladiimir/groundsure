@@ -1,0 +1,61 @@
+////////////////////////
+// Design Partials
+//
+// Separate your Layout from Design
+// Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
+//
+// All styling, non box model properties go here
+////////////////////////
+
+.menu-block-3{
+  background: url("../images/sprite.png") 152px -140px no-repeat #4194d8;
+  border-top: 1px solid #b3bed0;
+  border-left: 1px solid #b3bed0;
+  cursor: pointer;
+  & > a{
+    background: #e2e7e9;
+    text-decoration: none;
+    color: #2e362d;
+    text-align: left;
+  }
+  ul{
+    border: 0;
+    li{
+      a{
+        color: #2e362d;
+      }
+      &.active-trail{
+        background: #e2e7e9;
+        a.active {
+          color: #0974c7;
+        }
+      }
+        color: #2e362d;
+        &:hover > a{
+          color: #ffffff;
+        }
+      }
+      &:hover{
+        background: #e2e7e9!important;
+      }
+    a{
+      color: #2e362d;
+    }
+  }
+  & > ul{
+    background: #e2e7e9;
+    border: 1px solid #b3bed0;
+    li:hover{
+      background: #e2e7e9!important;
+      > a{
+        color: #0974c7;
+      }
+    }
+  }
+}
+@include breakpoint(max-width 479px){
+  #block-menu-block-3{
+    background: #1a4266;
+    text-align: right;
+  }
+}

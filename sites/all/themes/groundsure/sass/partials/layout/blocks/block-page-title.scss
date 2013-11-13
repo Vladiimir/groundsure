@@ -10,6 +10,7 @@
 #page-title{
   margin: 0;
   padding: 8px 20px;
+  text-transform: uppercase;
 }
 #block-block-13{
   .content p{
@@ -24,5 +25,26 @@
       right: 20px;
       top: -37px;
     }
+  }
+}
+@include breakpoint(max-width 540px){
+  #block-block-13{
+    .content p{
+      padding: 0 20px 8px 20px;
+      a{
+        float: none;
+        display: inline-block;
+        width: 65px;
+        height: 24px;
+        padding: 0 0px 0px 16px;
+        position: static;
+
+      }
+    }
+  }
+  #page-title{
+    margin: 0;
+    padding: 8px 20px 0 20px;
+    text-transform: uppercase;
   }
 }

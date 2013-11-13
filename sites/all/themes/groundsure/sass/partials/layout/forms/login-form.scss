@@ -8,7 +8,7 @@
 ////////////////////////
 
 #block-user-login{
-  width: 340px;
+  width: 345px;
   padding: 15px 20px 8px 20px;
   ul{
     margin: 0;
@@ -31,5 +31,8 @@
       width: 108px;
       height: 25px;
     }
+  }
+  @include breakpoint(max-width 767px){
+    display: none;
   }
 }

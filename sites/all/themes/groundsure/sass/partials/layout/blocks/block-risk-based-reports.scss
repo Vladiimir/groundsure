@@ -9,9 +9,12 @@
 
 .view-groundsure-residential-reports{
   .view-header{
+    overflow: hidden;
     h2{
       margin: 0;
       padding: 20px;
+      float: left;
+      text-transform: uppercase;
     }
     p{
       float: right;
@@ -70,6 +73,10 @@
       padding: 15px;
     }
   }
+  .cell-title,
+  .first-col{
+    display: none;
+  }
   @include breakpoint(max-width 767px){
     .view-content{
       th{
@@ -94,11 +101,62 @@
     }
   }
   @include breakpoint(max-width 540px){
+    thead{
+    }
     .view-content tr{
+      padding: 0 0 15px 0;
+      td{
+        padding: 10px 0 0 0;
+      }
+      td.main-col.first-col{
+      }
+      td.main-col.last-col{
+      }
+      .cell-title{
+        vertical-align: top;
+        padding: 10px 10px 0 15px;
+      }
+      .simbol{
+        margin-right: 10px;
+      }
+    }
+    .repotr-title{
+      width: auto;
+      padding: 0 15px 0 0;
+    }
+    .repotr-price{
+      padding: 0 5px 0 10px;
+    }
+    .repotr-insurance{
+      float: none;
       display: inline-block;
-      td.main-col{
-        display: block;
-        float: right;
+      padding: 0 0 0 15px;
+    }
+    .attachment{
+      .repotr-price{
+        padding: 0 0px 0 0px;
+      }
+    }
+    .view-header{
+      h2{
+        float: none;
+        padding-bottom: 5px;
+        padding-top: 10px;
+      }
+      p{
+        float: none;
+        padding-top: 0;
+        padding-bottom: 10px;
+        .simbol{
+          width: auto;
+          padding: 8px 20px 8px 50px;
+          &.no{
+            padding: 8px 20px 8px 40px;
+          }
+          &.yes{
+            padding: 8px 20px 8px 35px;
+          }
+        }
       }
     }
   }

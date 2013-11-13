@@ -30,3 +30,14 @@
     }
   }
 }
+@include breakpoint(max-width 540px){
+  #block-block-13{
+    .content p{
+      border-bottom: 1px solid #deded3;
+      background: #dbf4c4;
+    }
+  }
+  #page-title{
+    border-bottom: 0px solid #deded3;
+  }
+}

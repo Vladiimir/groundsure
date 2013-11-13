@@ -1,0 +1,49 @@
+////////////////////////
+// Design Partials
+//
+// Separate your Layout from Design
+// Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
+//
+// All styling, non box model properties go here
+////////////////////////
+
+.menu-block-3{
+
+  position: relative;
+  display: none;
+  width: 205px;
+  padding: 0px 22px 0px 0px;
+  & > a{
+    display: block;
+    padding: 3px 5px;
+  }
+  ul{
+    padding: 0;
+    li{
+      display: block;
+    }
+  }
+  & > ul{
+    position: absolute;
+    top: 26px;
+    left: -1px;
+    z-index: 100;
+    display: none;
+  }
+}
+@include breakpoint(max-width 767px){
+  .menu-block-3{
+    display: inline-block;
+  }
+  #block-menu-block-3{
+    float: right;
+    margin: 29px 25px 0 0;
+  }
+}
+@include breakpoint(max-width 479px){
+  #block-menu-block-3{
+    float: none;
+    margin: 0;
+    padding: 4px 10px;
+  }
+}

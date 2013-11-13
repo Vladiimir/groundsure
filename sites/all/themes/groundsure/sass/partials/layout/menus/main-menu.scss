@@ -36,6 +36,10 @@
       float: left;
     }
   }
+  #header #block-menu-block-1,
+  #header #block-menu-block-2{
+    display: none;
+  }
   .menu-name-main-menu{
     ul{
       padding: 0;

@@ -379,7 +379,7 @@ table {
   }
 }
 #block-user-login {
-  width: 340px;
+  width: 345px;
   padding: 15px 20px 8px 20px;
 }
 #block-user-login ul {
@@ -402,6 +402,11 @@ table {
 #block-user-login .form-actions .form-submit {
   width: 108px;
   height: 25px;
+}
+@media (max-width: 767px) {
+  #block-user-login {
+    display: none;
+  }
 }
 
 .menu-name-main-menu ul {
@@ -429,6 +434,11 @@ table {
     float: left;
   }
 
+  #header #block-menu-block-1,
+  #header #block-menu-block-2 {
+    display: none;
+  }
+
   .menu-name-main-menu ul {
     padding: 0;
   }
@@ -453,6 +463,47 @@ table {
   border: none;
 }
 
+.menu-block-3 {
+  position: relative;
+  display: none;
+  width: 205px;
+  padding: 0px 22px 0px 0px;
+}
+.menu-block-3 > a {
+  display: block;
+  padding: 3px 5px;
+}
+.menu-block-3 ul {
+  padding: 0;
+}
+.menu-block-3 ul li {
+  display: block;
+}
+.menu-block-3 > ul {
+  position: absolute;
+  top: 26px;
+  left: -1px;
+  z-index: 100;
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .menu-block-3 {
+    display: inline-block;
+  }
+
+  #block-menu-block-3 {
+    float: right;
+    margin: 29px 25px 0 0;
+  }
+}
+@media (max-width: 479px) {
+  #block-menu-block-3 {
+    float: none;
+    margin: 0;
+    padding: 4px 10px;
+  }
+}
 .page {
   margin: 0 auto;
   min-height: 100%;
@@ -681,10 +732,10 @@ table {
 }
 @media (max-width: 767px) {
   .flexslider .flex-direction-nav li a.flex-prev {
-    left: 265px;
+    left: 34%;
   }
   .flexslider .flex-direction-nav li a.flex-next {
-    right: 265px;
+    right: 34%;
   }
 }
 .flexslider .field-name-body {
@@ -829,6 +880,7 @@ table {
 #page-title {
   margin: 0;
   padding: 8px 20px;
+  text-transform: uppercase;
 }
 
 #block-block-13 .content p {
@@ -845,6 +897,25 @@ table {
   top: -37px;
 }
 
+@media (max-width: 540px) {
+  #block-block-13 .content p {
+    padding: 0 20px 8px 20px;
+  }
+  #block-block-13 .content p a {
+    float: none;
+    display: inline-block;
+    width: 65px;
+    height: 24px;
+    padding: 0 0px 0px 16px;
+    position: static;
+  }
+
+  #page-title {
+    margin: 0;
+    padding: 8px 20px 0 20px;
+    text-transform: uppercase;
+  }
+}
 #block-block-12 .content {
   padding: 20px;
   min-height: 130px;
@@ -862,9 +933,14 @@ table {
   }
 }
 
+.view-groundsure-residential-reports .view-header {
+  overflow: hidden;
+}
 .view-groundsure-residential-reports .view-header h2 {
   margin: 0;
   padding: 20px;
+  float: left;
+  text-transform: uppercase;
 }
 .view-groundsure-residential-reports .view-header p {
   float: right;
@@ -916,6 +992,10 @@ table {
   width: 30%;
   padding: 15px;
 }
+.view-groundsure-residential-reports .cell-title,
+.view-groundsure-residential-reports .first-col {
+  display: none;
+}
 @media (max-width: 767px) {
   .view-groundsure-residential-reports .view-content th {
     padding: 5px;
@@ -937,11 +1017,52 @@ table {
 }
 @media (max-width: 540px) {
   .view-groundsure-residential-reports .view-content tr {
-    display: inline-block;
+    padding: 0 0 15px 0;
   }
-  .view-groundsure-residential-reports .view-content tr td.main-col {
-    display: block;
-    float: right;
+  .view-groundsure-residential-reports .view-content tr td {
+    padding: 10px 0 0 0;
+  }
+  .view-groundsure-residential-reports .view-content tr .cell-title {
+    vertical-align: top;
+    padding: 10px 10px 0 15px;
+  }
+  .view-groundsure-residential-reports .view-content tr .simbol {
+    margin-right: 10px;
+  }
+  .view-groundsure-residential-reports .repotr-title {
+    width: auto;
+    padding: 0 15px 0 0;
+  }
+  .view-groundsure-residential-reports .repotr-price {
+    padding: 0 5px 0 10px;
+  }
+  .view-groundsure-residential-reports .repotr-insurance {
+    float: none;
+    display: inline-block;
+    padding: 0 0 0 15px;
+  }
+  .view-groundsure-residential-reports .attachment .repotr-price {
+    padding: 0 0px 0 0px;
+  }
+  .view-groundsure-residential-reports .view-header h2 {
+    float: none;
+    padding-bottom: 5px;
+    padding-top: 10px;
+  }
+  .view-groundsure-residential-reports .view-header p {
+    float: none;
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+  .view-groundsure-residential-reports .view-header p .simbol {
+    width: auto;
+    padding: 8px 20px 8px 50px;
+  }
+  .view-groundsure-residential-reports .view-header p .simbol.no {
+    padding: 8px 20px 8px 40px;
+  }
+  .view-groundsure-residential-reports .view-header p .simbol.yes {
+    padding: 8px 20px 8px 35px;
   }
 }
 
@@ -1186,6 +1307,59 @@ table {
   color: #ffffff;
 }
 
+.menu-block-3 {
+  background: url("../images/sprite.png") 152px -140px no-repeat #4194d8;
+  border-top: 1px solid #b3bed0;
+  border-left: 1px solid #b3bed0;
+  cursor: pointer;
+}
+.menu-block-3 > a {
+  background: #e2e7e9;
+  text-decoration: none;
+  color: #2e362d;
+  text-align: left;
+}
+.menu-block-3 ul {
+  border: 0;
+}
+.menu-block-3 ul li {
+  color: #2e362d;
+}
+.menu-block-3 ul li a {
+  color: #2e362d;
+}
+.menu-block-3 ul li.active-trail {
+  background: #e2e7e9;
+}
+.menu-block-3 ul li.active-trail a.active {
+  color: #0974c7;
+}
+.menu-block-3 ul li:hover > a {
+  color: #ffffff;
+}
+.menu-block-3 ul:hover {
+  background: #e2e7e9 !important;
+}
+.menu-block-3 ul a {
+  color: #2e362d;
+}
+.menu-block-3 > ul {
+  background: #e2e7e9;
+  border: 1px solid #b3bed0;
+}
+.menu-block-3 > ul li:hover {
+  background: #e2e7e9 !important;
+}
+.menu-block-3 > ul li:hover > a {
+  color: #0974c7;
+}
+
+@media (max-width: 479px) {
+  #block-menu-block-3 {
+    background: #1a4266;
+    text-align: right;
+  }
+}
 body {
   background: url("../images/bg_common.png") left top;
   font-family: "latoregular", arial, sans-serif;
@@ -1735,6 +1909,16 @@ a:hover {
   background: url("../images/sprite.png") -5px -114px no-repeat #edf9e1;
 }
 
+@media (max-width: 540px) {
+  #block-block-13 .content p {
+    border-bottom: 1px solid #deded3;
+    background: #dbf4c4;
+  }
+
+  #page-title {
+    border-bottom: 0px solid #deded3;
+  }
+}
 #block-block-12 .content {
   background: url("../images/house.png") 96% bottom no-repeat #f0fee3;
   border-top: 1px solid #ffffff;
@@ -1868,5 +2052,49 @@ a:hover {
 @media (max-width: 639px) {
   .view-groundsure-residential-reports .view-header h2 {
     font-size: 20px;
+  }
+}
+@media (max-width: 540px) {
+  .view-groundsure-residential-reports thead {
+    display: none;
+  }
+  .view-groundsure-residential-reports .view-content tr {
+    display: block;
+    background: #f2fde7;
+  }
+  .view-groundsure-residential-reports .view-content tr td {
+    display: inline-block;
+    border: none;
+    background: #f2fde7 !important;
+  }
+  .view-groundsure-residential-reports .view-content tr td.main-col.first-col {
+    display: block;
+    background: #d9f5c1 !important;
+    border-bottom: 1px solid #d4d5c8;
+  }
+  .view-groundsure-residential-reports .view-content tr td.main-col.last-col {
+    display: none;
+  }
+  .view-groundsure-residential-reports .view-content tr .cell-title {
+    display: inline-block;
+    font-size: 13px;
+  }
+  .view-groundsure-residential-reports .repotr-price {
+    display: inline-block;
+    border-left: 1px solid #343931;
+  }
+  .view-groundsure-residential-reports .repotr-insurance {
+    display: inline-block;
+    border-left: 1px solid #343931;
+  }
+  .view-groundsure-residential-reports .attachment .repotr-price {
+    display: inline-block;
+    border-left: 0px solid #343931;
+  }
+  .view-groundsure-residential-reports .view-header p .simbol.no {
+    background: url("../images/sprite.png") no-repeat scroll -57px -33px rgba(0, 0, 0, 0);
+  }
+  .view-groundsure-residential-reports .view-header p .simbol.yes {
+    background: url("../images/sprite.png") no-repeat scroll -61px 0 rgba(0, 0, 0, 0);
   }
 }
