@@ -1586,7 +1586,7 @@ a:hover {
   border-radius: 3px;
   font-size: 16px;
   text-decoration: none;
-  font-weight: bold;
+  font-family: "latobold", arial, sans-serif;
   color: #ffffff;
   padding: 0 10px;
   text-align: center;
@@ -1775,7 +1775,7 @@ a:hover {
   border-radius: 3px;
   font-size: 14px;
   text-decoration: none;
-  font-weight: bold;
+  font-family: "latobold", arial, sans-serif;
   color: #ffffff;
   padding: 0 10px;
   text-align: center;

@@ -144,7 +144,7 @@ padding: 0px 20px 0px 20px;
    @include rounded_corners($bRadius);
    font-size: $fSize;
    text-decoration: none;
-   font-weight: bold;
+   font-family: $font-bold-common;
    color: #ffffff;
    padding: 0 10px;
    text-align: center;
