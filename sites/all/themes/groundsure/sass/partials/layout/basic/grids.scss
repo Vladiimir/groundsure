@@ -24,8 +24,10 @@ $gutters: 0;
   }
 }
 .main-wrapper{
+  clear: both;
   @include breakpoint(min-width 990px){
     @include grid-span(4, 1);
+    clear: both;
   }
   @include breakpoint(max-width 989px){
     @include grid-span(4, 1, 259px 125px 125px 249px);
@@ -46,9 +48,9 @@ $gutters: 0;
   }
   @include breakpoint(min-width 990px){
     @include grid-span(5, 1);
+    clear: both;
   }
   clear: both;
-  //overflow: hidden;
 }
 .region-main-prefix-first{
   @include grid-span(1, 1, 259px 250px 249px);
@@ -89,4 +91,7 @@ $gutters: 0;
   @include breakpoint(max-width 767px){
     @include grid-span(1, 1);
   }
+}
+.main-prefix-wrapper{
+  overflow: hidden;
 }

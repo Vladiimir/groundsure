@@ -11,7 +11,7 @@
   @include sidebar_block();
   .content {
     a{
-      @include button(13px, 32px, #3497e4, 3px);
+      @include button(14px, 32px, #3497e4, 3px);
       line-height: 30px;
       &.btn_green{
         background: #509f10;

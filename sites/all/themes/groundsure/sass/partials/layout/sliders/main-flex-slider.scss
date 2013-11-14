@@ -26,18 +26,20 @@
     li a{
       width: 20px;
       height: 20px;
+      position: absolute;
+      display: block;
       &.flex-prev{
-        left: 320px;
+        left: 42%;//320px;
       }
       &.flex-next{
-        right: 320px;
+        right: 42%;//320px;
       }
       @include breakpoint(max-width 767px){
         &.flex-prev{
-          left: 34%//265px;
+          left: 40%//265px;
         }
         &.flex-next{
-          right: 34%//265px;
+          right: 40%//265px;
         }
       }
     }
@@ -62,6 +64,14 @@
       top: 10px;
       padding-right: 20px;
       padding-bottom: 45px;
+    }
+    .flex-direction-nav li a{
+      &.flex-prev{
+        left: 34%;//320px;
+      }
+      &.flex-next{
+        right: 34%;//320px;
+      }
     }
   }
 }

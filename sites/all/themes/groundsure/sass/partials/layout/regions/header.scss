@@ -15,4 +15,20 @@
   #block-user-login{
     float: right;
   }
+  &:after {
+    content:"";
+    display:table;
+    clear: both;
+    zoom: 1;
+  }
+}
+@include breakpoint(max-width 767px){
+  #logo{
+    float: left;
+  }
+}
+@include breakpoint(max-width 479px){
+  #logo{
+    float: none;
+  }
 }

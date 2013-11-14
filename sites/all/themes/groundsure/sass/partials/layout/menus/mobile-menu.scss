@@ -36,8 +36,16 @@
     display: inline-block;
   }
   #block-menu-block-3{
+    //float: right;
+    //margin: 29px 25px 0 0;
+    //display: inline-block;
     float: right;
     margin: 29px 25px 0 0;
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+//    position: absolute;
+//    right: 5%;
   }
 }
 @include breakpoint(max-width 479px){
@@ -45,5 +53,6 @@
     float: none;
     margin: 0;
     padding: 4px 10px;
+    display: block;
   }
 }

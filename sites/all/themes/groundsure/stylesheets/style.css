@@ -251,7 +251,23 @@ table {
 .region-header #block-user-login {
   float: right;
 }
+.region-header:after {
+  content: "";
+  display: table;
+  clear: both;
+  zoom: 1;
+}
 
+@media (max-width: 767px) {
+  #logo {
+    float: left;
+  }
+}
+@media (max-width: 479px) {
+  #logo {
+    float: none;
+  }
+}
 .region-footer {
   padding: 20px 0 35px;
 }
@@ -305,6 +321,7 @@ table {
   font-weight: normal;
   text-transform: uppercase;
   font-size: 17px;
+  text-align: center;
 }
 .region-main-prefix-first .block .image,
 .region-main-prefix-second .block .image,
@@ -312,6 +329,11 @@ table {
   text-align: center;
 }
 @media (max-width: 767px) {
+  .region-main-prefix-first .block h3,
+  .region-main-prefix-second .block h3,
+  .region-main-prefix-third .block h3 {
+    text-align: left;
+  }
   .region-main-prefix-first .block .image,
   .region-main-prefix-second .block .image,
   .region-main-prefix-third .block .image {
@@ -495,6 +517,9 @@ table {
   #block-menu-block-3 {
     float: right;
     margin: 29px 25px 0 0;
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
   }
 }
 @media (max-width: 479px) {
@@ -502,6 +527,7 @@ table {
     float: none;
     margin: 0;
     padding: 4px 10px;
+    display: block;
   }
 }
 .page {
@@ -532,6 +558,9 @@ table {
   }
 }
 
+.main-wrapper {
+  clear: both;
+}
 @media (min-width: 990px) {
   .main-wrapper {
     width: 76.56566%;
@@ -540,6 +569,7 @@ table {
     margin-left: 0%;
     clear: none;
     padding-right: 0;
+    clear: both;
   }
 }
 @media (max-width: 989px) {
@@ -598,6 +628,7 @@ table {
     margin-right: 0;
     clear: none;
     padding-right: 0;
+    clear: both;
   }
 }
 
@@ -702,6 +733,10 @@ table {
   }
 }
 
+.main-prefix-wrapper {
+  overflow: hidden;
+}
+
 .flexslider {
   margin: 0;
 }
@@ -723,19 +758,21 @@ table {
 .flexslider .flex-direction-nav li a {
   width: 20px;
   height: 20px;
+  position: absolute;
+  display: block;
 }
 .flexslider .flex-direction-nav li a.flex-prev {
-  left: 320px;
+  left: 42%;
 }
 .flexslider .flex-direction-nav li a.flex-next {
-  right: 320px;
+  right: 42%;
 }
 @media (max-width: 767px) {
   .flexslider .flex-direction-nav li a.flex-prev {
-    left: 34%;
+    left: 40%;
   }
   .flexslider .flex-direction-nav li a.flex-next {
-    right: 34%;
+    right: 40%;
   }
 }
 .flexslider .field-name-body {
@@ -758,6 +795,12 @@ table {
     top: 10px;
     padding-right: 20px;
     padding-bottom: 45px;
+  }
+  .flexslider .flex-direction-nav li a.flex-prev {
+    left: 34%;
+  }
+  .flexslider .flex-direction-nav li a.flex-next {
+    right: 34%;
   }
 }
 
@@ -892,7 +935,7 @@ table {
   width: 65px;
   height: 24px;
   padding-left: 16px;
-  position: absolute;
+  position: relative;
   right: 20px;
   top: -37px;
 }
@@ -1068,24 +1111,24 @@ table {
 
 @font-face {
   font-family: 'latobold';
-  src: url("lato-bol-webfont.eot");
-  src: url("lato-bol-webfont.eot?#iefix") format("embedded-opentype"), url("lato-bol-webfont.woff") format("woff"), url("lato-bol-webfont.ttf") format("truetype"), url("lato-bol-webfont.svg#latobold") format("svg");
+  src: url("../fonts/lato/lato-bol-webfont.eot");
+  src: url("../fonts/lato/lato-bol-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/lato-bol-webfont.woff") format("woff"), url("../fonts/lato/lato-bol-webfont.ttf") format("truetype"), url("../fonts/lato/lato-bol-webfont.svg#latobold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'latolight';
-  src: url("lato-lig-webfont.eot");
-  src: url("lato-lig-webfont.eot?#iefix") format("embedded-opentype"), url("lato-lig-webfont.woff") format("woff"), url("lato-lig-webfont.ttf") format("truetype"), url("lato-lig-webfont.svg#latolight") format("svg");
+  src: url("../fonts/lato/lato-lig-webfont.eot");
+  src: url("../fonts/lato/lato-lig-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/lato-lig-webfont.woff") format("woff"), url("../fonts/lato/lato-lig-webfont.ttf") format("truetype"), url("../fonts/lato/lato-lig-webfont.svg#latolight") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'latoregular';
-  src: url("lato-reg-webfont.eot");
-  src: url("lato-reg-webfont.eot?#iefix") format("embedded-opentype"), url("lato-reg-webfont.woff") format("woff"), url("lato-reg-webfont.ttf") format("truetype"), url("lato-reg-webfont.svg#latoregular") format("svg");
+  src: url("../fonts/lato/lato-reg-webfont.eot");
+  src: url("../fonts/lato/lato-reg-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/lato-reg-webfont.woff") format("woff"), url("../fonts/lato/lato-reg-webfont.ttf") format("truetype"), url("../fonts/lato/lato-reg-webfont.svg#latoregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -1131,6 +1174,7 @@ table {
   font-weight: normal;
   text-transform: uppercase;
   font-size: 17px;
+  text-align: center;
 }
 .region-main-prefix-first .block .image,
 .region-main-prefix-second .block .image,
@@ -1138,6 +1182,11 @@ table {
   text-align: center;
 }
 @media (max-width: 767px) {
+  .region-main-prefix-first .block h3,
+  .region-main-prefix-second .block h3,
+  .region-main-prefix-third .block h3 {
+    text-align: left;
+  }
   .region-main-prefix-first .block .image,
   .region-main-prefix-second .block .image,
   .region-main-prefix-third .block .image {
@@ -1636,7 +1685,7 @@ a:hover {
 }
 #block-block-8 .view-field-title {
   font-weight: normal;
-  padding: 0 0 6px;
+  padding: 0 0 7px;
   font-size: 16px;
 }
 #block-block-8 .view-field-tag {
@@ -1724,7 +1773,7 @@ a:hover {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  font-size: 13px;
+  font-size: 14px;
   text-decoration: none;
   font-weight: bold;
   color: #ffffff;
